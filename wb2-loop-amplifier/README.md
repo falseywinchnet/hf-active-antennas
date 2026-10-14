@@ -85,7 +85,10 @@ WB-2 is a balanced HF (0.1–30 MHz) amplifier for small receiving loops, in the
 - **Connectors:** all panel-mounted and wired to the board.
   - Left wall: loop posts J1/J2 and the ground post J3.
   - Right wall: F jack J4 (RG-179 pigtail ≤ 50 mm) and DC jack J5.
-- **Mechanical drawing:** `docs/wb2_mechanical.pdf` gives the wall-hole proposals. It is not a drilling template until the box datums are measured.
+- **Mechanical drawing:** `docs/wb2_mechanical.pdf` (rev C) gives the wall-hole positions, checked against the connector makers' drawings. It is not a drilling template until the box datums are measured.
+  - **Left wall:** Cliff CL1505 posts (13.3 mm collars, 7 mm keyed holes) at 19.05 mm pitch, so a dual 4 mm plug fits LOOP A/B.
+  - **Right wall:** the 222114-10 F jack mounts from the rear (12.9 mm flange inside). The 721AU's 14.3 mm body sits inside the wall, clear of the lid-screw column.
+  - **721AU nut:** its bushing is only 4.6 mm long, so check nut engagement on the 3 mm wall and counterbore from inside if it is short.
 
 **JLCPCB fabrication:** upload `jlcpcb/wb2_gerbers_drill.zip`.
 - 2 layers, 96 × 76 mm, 1.6 mm, 1 oz;
