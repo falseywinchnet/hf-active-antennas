@@ -1,0 +1,57 @@
+Qty,Designators,Value,Description,Manufacturer,MPN,Footprint,Status
+7,C431 CPC1 CRO CVB CVCLN1 CVCLP1 CVGREF1,10u 16V X7R,MLCC X7R 0805,,,C_0805_2012Metric,generic - any vendor to spec
+2,CCOMP CF,15p 50V C0G,MLCC C0G/NP0 0603,,,C_0603_1608Metric,generic - any vendor to spec
+3,CDC CU1 CVO,100n 25V X7R,MLCC X7R 0603,,,C_0603_1608Metric,generic - any vendor to spec
+1,CF2,33p 50V C0G,MLCC C0G/NP0 0603,,,C_0603_1608Metric,generic - any vendor to spec
+1,CF3,130p 50V C0G,MLCC C0G/NP0 0603,,,C_0603_1608Metric,generic - any vendor to spec
+2,CF4 CLIM,470p 50V C0G,MLCC C0G/NP0 0603,,,C_0603_1608Metric,generic - any vendor to spec
+1,CFL,47u 25V X5R,MLCC X5R 1210,,,C_1210_3225Metric,generic - any vendor to spec
+1,CFM,68p 50V C0G,MLCC C0G/NP0 0603,,,C_0603_1608Metric,generic - any vendor to spec
+1,CIN,1u 25V X7R,MLCC X7R 0805,,,C_0805_2012Metric,generic - any vendor to spec
+1,CO,22u 25V X7R,MLCC X7R 1206,,,C_1206_3216Metric,generic - any vendor to spec
+1,CPB,1u 25V X7R,MLCC X7R 0603,,,C_0603_1608Metric,generic - any vendor to spec
+4,CPC2 CVCLN2 CVCLP2 CVGREF2,100n 16V X7R,MLCC X7R 0402,,,C_0402_1005Metric,generic - any vendor to spec
+1,CSB,10u 16V X7R,MLCC X7R 1206,,,C_1206_3216Metric,generic - any vendor to spec
+3,CSF CSR CVS,1u 16V X7R,MLCC X7R 0603,,,C_0603_1608Metric,generic - any vendor to spec
+1,CSI,4.7u 25V X7R,MLCC X7R 0805,,,C_0805_2012Metric,generic - any vendor to spec
+1,CVC,10u 25V X7R,MLCC X7R 0805,,,C_0805_2012Metric,generic - any vendor to spec
+1,D1,SP4022,"TVS diode, bidirectional, 1.3 pF, SOD-323 (plate)",Littelfuse,SP4022-01FTG-C,D_SOD-323,verified against datasheet
+9,D2 D3 D4 D5 D6 D7 D8 D9 D10,BAV99,"Dual series switching diode, trr 6 ns, SOT-23 (1=A1 2=K2 3=K1/A2)",onsemi,BAV99LT1G,SOT-23,verified against datasheet
+1,D12,SMBJ15A,"TVS 15 V unidirectional, SMB (supply)",Littelfuse,SMBJ15A,D_SMB,generic - any vendor to spec
+1,FB1,BLM18KG601,"Ferrite bead 600 ohm @100 MHz, 1.3 A, 0603 (phantom-feed hot end)",Murata,BLM18KG601SN1D,L_0603_1608Metric,verified against datasheet
+1,GDT1,GDT25-09-S1,"Gas discharge tube 90 V, 2-electrode SMD (plate surge)",Bourns,GDT25-09-S1-RP,GDT25_S1,verified against datasheet
+1,J1,F jack R/A,"F jack 75 ohm, right angle, PCB through hole, 3/8-32 + nut/washer, DC-3 GHz (LCSC C5119715)",Dosin,DOSIN-803-0182,F_DOSIN_803-0182_RA,verified against datasheet
+3,JP1 JP2 JP3,JUMPER 2p,2-pin 2.54 mm header + shunt (gain step; fit at most one),,,PinHeader_1x02_P2.54mm_Vertical,generic - any vendor to spec
+1,LFD,74404054102,"WE-LQS 5040 1 mH, 200 mA, 6 ohm, SRF 1.9 MHz, AEC-Q200 G1 (phantom-feed choke)",Wurth Elektronik,74404054102,WE-LQS_5040,verified against datasheet
+1,LFL,B82442T1104K000,"SMD choke SIMID 2220-T 100 uH, 510 mA, 0.99 ohm (supply filter)",TDK,B82442T1104K000,L_2220_SIMID,verified against datasheet
+1,LFM,0805CS-271XJL,"Ceramic-core wirewound 270 nH 5 %, 0805 (FM low-pass)",Coilcraft,0805CS-271XJL,L_0805_2012Metric,verified against datasheet
+4,Q1 Q2 Q3 Q4,LSBF862,"N-channel JFET, ultra-low noise, SOT-23 (S/D interchangeable; 3=G)",Linear Integrated Systems,LSBF862,SOT-23,verified against datasheet
+1,Q5,BC817-25,"NPN 45 V 500 mA, SOT-23 (JFET source sink)",onsemi,BC817-25LT1G,SOT-23,verified against datasheet
+1,Q6,MMBTH81,"PNP RF 600 MHz, SOT-23 (D-node current-source load)",onsemi,MMBTH81LT1G,SOT-23,verified against datasheet
+6,Q7 Q8 Q9 Q10 Q11 Q12,NSVF4015,"NPN RF 10 GHz 12 V 100 mA, SC-82FL/MCPH4 (1=C 2,4=E 3=B), AEC-Q101",onsemi,NSVF4015SG4T1G,SC-82FL_MCPH4,verified against datasheet
+3,R1 RMRE RPC,100,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,R431,2.2k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RB,2.2M,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+9,RBF1 RBF2 RBS1 RBS2 RES1 RES2 RG3 RG4 RMB,10,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RBP,22,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RBSK,470,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+2,RCF1 RCF2,2.2,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+2,REF1 REF2,1,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,REL,68,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RESK,12,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RF,1.5M,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RFL,2.2,Resistor 0805 1% thick film,,,R_0805_2012Metric,generic - any vendor to spec
+1,RGRA,14.0k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+2,RGRB RGRC,1k,Resistor 0603 0.1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RGRD,9.09k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+2,RLB RSI,10M,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RMR,1.69k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+2,RPBD RVB,1k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RPE,1.5k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RRO1,10k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RRO2,9.1k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RSF,100k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RSR1,9.1k,Resistor 0603 0.1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,RSR2,1.0k,Resistor 0603 0.1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,U1,LM2904,"Dual op-amp, -40..125 C, SOIC-8 (A: DC servo, B: JFET sink)",onsemi,LM2904VDR2G,SOIC-8_3.9x4.9mm_P1.27mm,verified against datasheet
+1,U2,TL431,"Shunt reference 2.495 V 0.4 %, -40..85 C, SOIC-8 (REF tied to K)",onsemi,TL431BIDR2G,SOIC-8_3.9x4.9mm_P1.27mm,verified against datasheet

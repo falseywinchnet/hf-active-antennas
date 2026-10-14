@@ -1,0 +1,249 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-01T04:55:54",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "mw1.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 53.75,
+                        "y": 95.8
+                    },
+                    "uuid": "76bf4ce3-60ae-429a-8826-6945ca9da847"
+                },
+                {
+                    "description": "Pad 1 [PLATE] of E1 on F.Cu",
+                    "pos": {
+                        "x": 55.75,
+                        "y": 117.0
+                    },
+                    "uuid": "4cb60ab5-ce94-4087-b252-388021460762"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.3000 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 53.75,
+                        "y": 95.8
+                    },
+                    "uuid": "76bf4ce3-60ae-429a-8826-6945ca9da847"
+                },
+                {
+                    "description": "Pad 1 [PLATE] of E1 on B.Cu",
+                    "pos": {
+                        "x": 55.75,
+                        "y": 117.0
+                    },
+                    "uuid": "7832c6b4-9f42-45e8-9986-d31cda14efca"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'mw1'",
+            "items": [
+                {
+                    "description": "Footprint Q12",
+                    "pos": {
+                        "x": 112.2,
+                        "y": 128.4
+                    },
+                    "uuid": "0e12ea19-2b48-4aa3-8ff5-5976eba5fb47"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'mw1'",
+            "items": [
+                {
+                    "description": "Footprint Q10",
+                    "pos": {
+                        "x": 109.6,
+                        "y": 121.6
+                    },
+                    "uuid": "129329a0-22e3-47e4-9502-3fd703e3533b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'mw1'",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 140.1,
+                        "y": 117.0
+                    },
+                    "uuid": "14c5448e-c61b-44b4-a44c-079fd2437a94"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'mw1'",
+            "items": [
+                {
+                    "description": "Footprint E1",
+                    "pos": {
+                        "x": 53.75,
+                        "y": 117.0
+                    },
+                    "uuid": "433325fa-3d51-4b93-b0c8-c4720134590c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'mw1'",
+            "items": [
+                {
+                    "description": "Footprint Q8",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 122.6
+                    },
+                    "uuid": "531e08d9-21af-448c-85e9-3ace9282eb44"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'mw1'",
+            "items": [
+                {
+                    "description": "Footprint Q9",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 114.8
+                    },
+                    "uuid": "7034e3b4-45c3-4327-9ce7-54b61b83522b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'mw1'",
+            "items": [
+                {
+                    "description": "Footprint LFD",
+                    "pos": {
+                        "x": 132.199999,
+                        "y": 126.0
+                    },
+                    "uuid": "8f46533e-ed68-4478-943b-c31882284d1f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'mw1'",
+            "items": [
+                {
+                    "description": "Footprint Q11",
+                    "pos": {
+                        "x": 109.6,
+                        "y": 114.8
+                    },
+                    "uuid": "dd60581e-4da8-41fc-8526-672b56899f9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'mw1'",
+            "items": [
+                {
+                    "description": "Footprint LFL",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 133.8
+                    },
+                    "uuid": "e1925b33-74c9-4b3b-abcd-950fe2c05f51"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'mw1'",
+            "items": [
+                {
+                    "description": "Footprint Q7",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 125.0
+                    },
+                    "uuid": "e6d2f406-5934-41e7-96ae-50d1d22314e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'mw1'",
+            "items": [
+                {
+                    "description": "Footprint GDT1",
+                    "pos": {
+                        "x": 62.0,
+                        "y": 118.8
+                    },
+                    "uuid": "eb43cc3e-60bc-43b5-a61d-475990d80493"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

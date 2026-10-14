@@ -1,0 +1,45 @@
+Qty,Designators,Value,Description,Manufacturer,MPN,Footprint,Status
+1,C1,220uF 25V,"Aluminium electrolytic, SMD 10x10.5 mm can",Panasonic,EEE-FC1E221P,CP_Elec_10x10.5,candidate - verify before ordering
+1,C2,100nF 50V,MLCC X7R 0603,,,C_0603_1608Metric,generic - any vendor to spec
+1,C3,1uF 50V,MLCC X7R 0603 (input DC block),,,C_0603_1608Metric,generic - any vendor to spec
+1,C4,47uF 10V,MLCC X5R 1206 (JFET source bypass),,,C_1206_3216Metric,generic - any vendor to spec
+1,C5,47uF 10V,MLCC X5R 1206 (VSRC bypass),,,C_1206_3216Metric,generic - any vendor to spec
+4,C6 C7 C8 C9,1uF 25V,MLCC X7R 0603,,,C_0603_1608Metric,generic - any vendor to spec
+1,C10,15pF 50V,MLCC C0G 0603,,,C_0603_1608Metric,generic - any vendor to spec
+1,C11,GDT 90V,"Gas discharge tube, 2-electrode SMD",Bourns,GDT25-09-S1-RP,GDT25_S1,verified against datasheet
+1,C12,1uF 50V,MLCC X7R 0805 (DM supply filter),,,C_0805_2012Metric,generic - any vendor to spec
+1,C13,1uF 50V,MLCC X7R 0603 (output DC block: the coax may carry +12V),,,C_0603_1608Metric,generic - any vendor to spec
+1,C14,1uF 50V,MLCC X7R 0603 (L8 cold-end bypass; 1u puts the L8/C14 notch at ~5 kHz),,,C_0603_1608Metric,generic - any vendor to spec
+1,D1,SS14,"Schottky 40V 1A, SMA (jack feed: reverse polarity + OR)",,SS14,D_SMA,generic - any vendor to spec
+1,D2,SMBJ15A,"TVS 15V unidirectional, SMB",,SMBJ15A,D_SMB,generic - any vendor to spec
+3,D3 D4 D5,SP4022,"TVS array, bidirectional, SOD-323 (RF input)",Littelfuse,SP4022-01FTG-C,D_SOD-323,verified against datasheet
+1,D6,BAV99,"Dual switching diode, SOT-23 (gate clamp)",,BAV99,SOT-23,generic - any vendor to spec
+1,D8,SS14,"Schottky 40V 1A, SMA (coax feed: OR diode)",,SS14,D_SMA,generic - any vendor to spec
+4,J1 J2 J3 J4,LSBF862,"N-channel JFET, SOT-23 (1=S 2=D 3=G)",Linear Integrated Systems,LSBF862 SOT-23,SOT-23_WB,verified against datasheet
+1,L1,82nH,"Ceramic-core wirewound 0603, Q>=34@250MHz, SRF>=1.7GHz",Coilcraft,0603CS-82NXJRW,L_0603_1608Metric,verified against datasheet
+2,L2 L3,1mH,"SMD choke SIMID 2220-T, Itemp 150mA, Rmax 9.5ohm, SRF>=1.8MHz (replaces obsolete B82442H1105K000)",TDK,B82442T1105K000,L_2220_SIMID,verified against datasheet
+2,L4 L5,600R@100MHz,"Ferrite bead 0603, >=200mA (choke hot-end damping)",Murata,BLM18KG601SN1D,L_0603_1608Metric,candidate - verify before ordering
+1,L6,744222,"Common-mode choke WE-SL2 2x1000uH, 800mA, 0.207ohm; CM |Z| >=1k 0.12-50MHz (12V jack entry)",Wurth Elektronik,744222,L_CommonMode_Wuerth_WE-SL2,verified against datasheet
+1,L7,100uH,"SMD choke SIMID 2220-T, Itemp 510mA, Rmax 0.99ohm, SRF>=6.1MHz (DM supply filter)",TDK,B82442T1104K000,L_2220_SIMID,verified against datasheet
+1,L8,1mH,"SMD choke SIMID 2220-T, coax phantom-feed choke, Itemp 150mA, Rmax 9.5ohm, SRF>=1.8MHz",TDK,B82442T1105K000,L_2220_SIMID,verified against datasheet
+1,L9,600R@100MHz,"Ferrite bead 0603, >=200mA (L8 cold-end UHF damping)",Murata,BLM18KG601SN1D,L_0603_1608Metric,candidate - verify before ordering
+4,L10 L11 L12 L13,60R@100MHz,Ferrite bead 0603 (gate stopper),Murata,BLM18BB600SN1D,L_0603_1608Metric,candidate - verify before ordering
+1,L14,100uH,"SMD choke SIMID 2220-T, coax-feed hot section in series with L8, Itemp 510mA, Rmax 0.99ohm, SRF>=6.1MHz",TDK,B82442T1104K000,L_2220_SIMID,verified against datasheet
+4,Q1 Q2 Q3 Q4,NSVF4009SG4,"RF NPN 25GHz, SC-82FL/MCPH4 (1=C 2,4=E 3=B)",onsemi,NSVF4009SG4T1G,SC-82FL_MCPH4,verified against datasheet
+5,R1 R10 R11 R12 R13,22,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+2,R2 R8,47,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,R3,100k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,R4,3.3,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,R5,100,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,R6,270,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,R7,3.0k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,R9,PTC 0.1A hold,"Resettable fuse 1812, Ihold ~100mA, >=16V",Bourns,MF-MSMF010-2,R_1812_4532Metric,candidate - verify before ordering
+4,R20 R21 R22 R23,56,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+4,R30 R31 R32 R33,10,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+2,R40 R42,294,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,R41,17.8,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,R43,4.7k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,R44,1k,Resistor 0603 1% thick film,,,R_0603_1608Metric,generic - any vendor to spec
+1,X1,SMA RF IN,"SMA jack, edge mount, 1.6 mm board",Samtec,SMA-J-P-H-ST-EM1,SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount,footprint from KiCad library - confirm part
+1,X2,SMA RF OUT,"SMA jack, edge mount, 1.6 mm board",Samtec,SMA-J-P-H-ST-EM1,SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount,footprint from KiCad library - confirm part
+1,X3,12V DC jack,"2.1 mm DC barrel jack, through hole",CUI,PJ-102AH,BarrelJack_CUI_PJ-102AH_Horizontal,footprint from KiCad library - confirm part

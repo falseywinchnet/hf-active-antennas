@@ -1,0 +1,55 @@
+* MW parts library (mini-whip).  Claude 2026-10-01.
+*
+* NSVF4015SG4 (onsemi, ACTIVE; AEC-Q101): NPN RF, VCBO 20 V, VCEO 12 V, IC 100 mA, PC 450 mW, hFE 60-150 @ 50 mA,
+* fT 10 GHz typ @ 30 mA / 5 V.  onsemi publishes NO SPICE table for this part; this is a FIT to those datasheet
+* points (beta ~100, fT ~10 GHz at 30 mA, sane junction capacitances for an MCPH4 RF die), with MCPH4 lead
+* inductances borrowed from the NSVF4020SG4 published network.  Adequate for 9 kHz - 100 MHz work; not an RF model.
+* Pins: C B E
+.SUBCKT NSVF4015_FIT C B E
+LB B bi 0.9n
+LC C ci 0.6n
+LE E ei 0.4n
+Q1 ci bi ei NSVF4015CORE
+.MODEL NSVF4015CORE NPN(IS=2e-15 BF=100 NF=1.0 VAF=30 IKF=0.25 ISE=1e-14 NE=2 BR=10 NR=1 VAR=4 IKR=0.3
++ RB=3 RBM=1 IRB=0.1 RE=0.4 RC=1.5 CJE=2p VJE=0.8 MJE=0.33 CJC=0.8p VJC=0.6 MJC=0.3 TF=12p XTF=2 VTF=5 ITF=0.2
++ TR=1n EG=1.11 XTI=3 FC=0.5)
+.ENDS NSVF4015_FIT
+*
+* Low-leakage, low-capacitance clamp diode, BAS116/BAV199 class (part to be chosen from an active onsemi line).
+* Zero-bias R0 = N Vt / IS ~ 25 Gohm.
+.model DLL D(IS=2e-12 N=1.9 RS=1 CJO=1.2p M=0.3 VJ=0.6 BV=85 IBV=5n TT=3u)
+*
+* MMBTH81 (onsemi, ACTIVE, datasheet rev Aug 2026): PNP RF, 20 V, 50 mA, 225 mW, fT 600 MHz, Ccb 0.85 pF.
+* Model verbatim from the onsemi datasheet "SPICE MODEL" section.
+.model MMBTH81 PNP(Is=10f Xti=3 Eg=1.11 Vaf=100 Bf=133.8 Ise=1.678p Ne=2.159 Ikf=.1658 Nk=.901 Xtb=1.5 Var=100 Br=1
++ Isc=9.519n Nc=3.88 Ikr=5.813 Rc=7.838 Cjc=2.81p Mjc=.1615 Vjc=.8282 Fc=.5 Cje=2.695p Mje=.3214 Vje=.7026
++ Tr=11.32n Tf=97.83p Itf=69.29 Xtf=599u Vtf=10)
+*
+* ---- behavioural helpers for the drawn schematic (mw1.asc) ----
+* LM2904 / LM358 (onsemi): GBW 0.7 MHz, 100 dB, en ~40 nV/rtHz (noisy 96.6k at +in), output VEE+0.05 .. VCC-1.5 V
+.SUBCKT LM2904_BEH INP INN VCC VEE OUT
+RN INP ip 96.6k
+GOA 0 oi ip INN 1m
+ROA oi 0 100Meg
+COA oi 0 227p
+BO ob 0 V=min(max(V(oi),V(VEE)+0.05),V(VCC)-1.5)
+RO ob OUT 50
+.ENDS LM2904_BEH
+* TL431 (onsemi): 2.495 V shunt reference, behavioural (gm 50 A/V above Vref, 10 pF)
+.SUBCKT TL431_BEH K A REF
+VR rr A 2.495
+G1 K A value={max(0, 50*(V(REF)-V(rr)))}
+RREF REF A 1G
+CK K A 10p
+.ENDS TL431_BEH
+* 90 V gas discharge tube (Bourns 2-electrode class): 0.6 pF, fires at 90 V, extinguishes below ~20 V
+.SUBCKT GDT90 A K
+C1 A K 0.6p
+S1 A K A K GSW
+S2 A K K A GSW
+.model GSW SW(Ron=1 Roff=1e13 Vt=55 Vh=35)
+.ENDS GDT90
+* TL431 used as a 2-terminal 2.495 V shunt (REF tied to K), for drawing with a 2-pin symbol. Pins: A K
+.SUBCKT TL431_2T A K
+X1 K A K TL431_BEH
+.ENDS TL431_2T

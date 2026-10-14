@@ -1,0 +1,10 @@
+_scratch/
+*.log
+*.raw
+*.net
+*.fft
+*.op.raw
+__pycache__/
+*-backups/
+*.kicad_prl
+fp-info-cache

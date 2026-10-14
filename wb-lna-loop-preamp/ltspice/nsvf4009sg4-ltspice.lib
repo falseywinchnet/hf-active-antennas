@@ -1,0 +1,28 @@
+* LTspice adapter: 38.78 attoampere written 38.78e-18; suffix a is not supported.
+* All other printed values and Fig 10 package topology preserved.
+* onsemi NSVF4009SG4/D Rev 1 March 2024, page 5.
+* LITERAL parameter-table transcription. NOT validated.
+* Suspicious source entries preserved: XTF=11f VJS=140f MJS=150.
+* PTF is printed with degrees C in source; SPICE defines phase in degrees.
+.model NSVF4009_CORE NPN(
++ IS=38.78e-18 BF=107.6 NF=1.002 VAF=34.79 IKF=199.6m ISE=138.1f NE=2.5
++ BR=1.5 NR=1.05 VAR=200 IKR=20u ISC=0 NC=2
++ RB=8.5 IRB=143.2m RBM=1.584 RE=1.022 RC=3.675 XTB=0 EG=1.11 XTI=3
++ CJE=250f VJE=23m MJE=21.60m TF=5.398p XTF=11f VTF=81.1 ITF=1.55
++ PTF=32 CJC=214f VJC=111.7m MJC=118m XCJC=833.8m TR=50p FC=8.105m
++ CJS=123.2f VJS=140f MJS=150)
+.subckt NSVF4009SG4_LTSPICE C B E
+* Physical package: 1 C, 3 B, 2+4 E. This wrapper uses C B E order.
+Llb B bm 210p
+Lwb bm bi 415p
+Lwc ci cm 330p
+Llc cm C 651.5p
+Lwe ei em 243.6p
+Lle em E 12.8p
+Ccb B ci 26.7f
+Cbe1 bm em 65f
+Cbe2 B E 25.2f
+Cec1 cm em 185.4f
+Cec2 C E 40f
+Qcore ci bi ei NSVF4009_CORE
+.ends NSVF4009SG4_LTSPICE

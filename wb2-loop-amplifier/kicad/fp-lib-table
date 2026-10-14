@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "wb2")(type "KiCad")(uri "${KIPRJMOD}/wb2.pretty")(options "")(descr ""))
+  (lib (name "wblna")(type "KiCad")(uri "${KIPRJMOD}/wblna.pretty")(options "")(descr ""))
+)

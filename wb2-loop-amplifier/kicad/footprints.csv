@@ -1,0 +1,124 @@
+ref,value,mpn,footprint,fit,note
+J1,LOOP A,Cliff CL1505 4 mm binding post,Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm,FIT,"panel-mount 4 mm post on the enclosure, short wire to this pad"
+J2,LOOP B,Cliff CL1505 4 mm binding post,Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm,FIT,"panel-mount 4 mm post, short wire"
+J3,GND,Cliff CL1505 4 mm binding post,Connector_Wire:SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm,FIT,"ground post: broad, direct surge-return path to the protection group"
+GDT1,90 V,Bourns GDT25-09-S1-RP,wblna:GDT25_S1,FIT,
+D1,SP4022,Littelfuse SP4022-01FTG-C,Diode_SMD:D_SOD-323,FIT,as K9
+D2,SP4022,Littelfuse SP4022-01FTG-C,Diode_SMD:D_SOD-323,FIT,as K9
+D3,SP4022,Littelfuse SP4022-01FTG-C,Diode_SMD:D_SOD-323,FIT,as K9
+GDT2,90 V,Bourns GDT25-09-S1-RP,wblna:GDT25_S1,FIT,
+D4,SP4022,Littelfuse SP4022-01FTG-C,Diode_SMD:D_SOD-323,FIT,as K9
+D5,SP4022,Littelfuse SP4022-01FTG-C,Diode_SMD:D_SOD-323,FIT,as K9
+D6,SP4022,Littelfuse SP4022-01FTG-C,Diode_SMD:D_SOD-323,FIT,as K9
+L9,0R link,Vishay WFZ0603 low-resistance jumper (verify R; footprint reserved for a series L),Resistor_SMD:R_0603_1608Metric,FIT,link; same land accepts an 0603 inductor later
+L10,0R link,Vishay WFZ0603 low-resistance jumper (verify R; footprint reserved for a series L),Resistor_SMD:R_0603_1608Metric,FIT,link; same land accepts an 0603 inductor later
+R1,100k,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+R2,100k,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+R3,150,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+C1,15p,0603 C0G 50 V,Capacitor_SMD:C_0603_1608Metric,FIT,
+T1,WB16-6T,Coilcraft WB16-6TSLD (SMD; TH equivalent WB16-6TL),wb2:Coilcraft_WB_SMD,FIT,"draw from Coilcraft Doc 425 SMD land; pads 1-6, pad 5 unused (no net)"
+T3,WB36-1,Coilcraft WB36-1SLD (SMD; TH equivalent WB36-1L),wb2:Coilcraft_WB_SMD,FIT,pads 2 and 5 unused (no net)
+T4,WB36-1,Coilcraft WB36-1SLD (SMD; TH equivalent WB36-1L),wb2:Coilcraft_WB_SMD,FIT,pads 2 and 5 unused (no net)
+R4,100,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+C2,100n,0603 X7R 25 V,Capacitor_SMD:C_0603_1608Metric,FIT,
+D7,BAV99,onsemi BAV99LT1G (active; sourcing rule: no NXP-lineage parts),Package_TO_SOT_SMD:SOT-23,FIT,pads 1+2 tied
+D8,BAV99,onsemi BAV99LT1G (active; sourcing rule: no NXP-lineage parts),Package_TO_SOT_SMD:SOT-23,FIT,pads 1+2 tied
+D12,BAV23 (DNP),Nexperia BAV23 (evaluation footprint),Package_TO_SOT_SMD:SOT-143,DNP,"SOT143B, NOT SOT-143R; DNP alternative; alternative to D7 (fit one, never both)"
+D13,BAV23 (DNP),Nexperia BAV23 (evaluation footprint),Package_TO_SOT_SMD:SOT-143,DNP,"SOT143B, NOT SOT-143R; DNP alternative; alternative to D8 (fit one, never both)"
+C3,10u,1206 X7R 16 V,Capacitor_SMD:C_1206_3216Metric,FIT,
+C4,10u,1206 X7R 16 V,Capacitor_SMD:C_1206_3216Metric,FIT,
+Q1,LSBF862,"Linear Systems LSBF862 (SOT-23), Vgs-selected at 8.5 mA",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+FB1,470R@100M,Murata BLM18PG471SN1D,Inductor_SMD:L_0603_1608Metric,FIT,
+Q2,LSBF862,"Linear Systems LSBF862 (SOT-23), Vgs-selected at 8.5 mA",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+FB2,470R@100M,Murata BLM18PG471SN1D,Inductor_SMD:L_0603_1608Metric,FIT,
+Q3,LSBF862,"Linear Systems LSBF862 (SOT-23), Vgs-selected at 8.5 mA",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+FB3,470R@100M,Murata BLM18PG471SN1D,Inductor_SMD:L_0603_1608Metric,FIT,
+Q4,LSBF862,"Linear Systems LSBF862 (SOT-23), Vgs-selected at 8.5 mA",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+FB4,470R@100M,Murata BLM18PG471SN1D,Inductor_SMD:L_0603_1608Metric,FIT,
+Q5,LSBF862,"Linear Systems LSBF862 (SOT-23), Vgs-selected at 8.5 mA",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+FB5,470R@100M,Murata BLM18PG471SN1D,Inductor_SMD:L_0603_1608Metric,FIT,
+Q6,LSBF862,"Linear Systems LSBF862 (SOT-23), Vgs-selected at 8.5 mA",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+FB6,470R@100M,Murata BLM18PG471SN1D,Inductor_SMD:L_0603_1608Metric,FIT,
+Q7,LSBF862,"Linear Systems LSBF862 (SOT-23), Vgs-selected at 8.5 mA",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+FB7,470R@100M,Murata BLM18PG471SN1D,Inductor_SMD:L_0603_1608Metric,FIT,
+Q8,LSBF862,"Linear Systems LSBF862 (SOT-23), Vgs-selected at 8.5 mA",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+FB8,470R@100M,Murata BLM18PG471SN1D,Inductor_SMD:L_0603_1608Metric,FIT,
+L1,1m,TDK B82442T1105K000,wblna:L_2220_SIMID,FIT,as K9
+C5,1u,0603 X7R 16 V,Capacitor_SMD:C_0603_1608Metric,FIT,
+C7,10n,0603 X7R 25 V,Capacitor_SMD:C_0603_1608Metric,FIT,
+Q17,BC817-25,onsemi BC817-25LT1G (active; sourcing rule: no NXP transistors),Package_TO_SOT_SMD:SOT-23,FIT,"1 B, 2 E, 3 C"
+R5,14.7,0603 0.1% (Kelvin-routed),Resistor_SMD:R_0603_1608Metric,FIT,
+R7,470,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+L2,1m,TDK B82442T1105K000,wblna:L_2220_SIMID,FIT,as K9
+C6,1u,0603 X7R 16 V,Capacitor_SMD:C_0603_1608Metric,FIT,
+C8,10n,0603 X7R 25 V,Capacitor_SMD:C_0603_1608Metric,FIT,
+Q18,BC817-25,onsemi BC817-25LT1G (active; sourcing rule: no NXP transistors),Package_TO_SOT_SMD:SOT-23,FIT,"1 B, 2 E, 3 C"
+R6,14.7,0603 0.1% (Kelvin-routed),Resistor_SMD:R_0603_1608Metric,FIT,
+R8,470,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+U1,LM358B,TI LM358BIDR (SOIC-8),Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,FIT,
+C21,100n,0603 X7R 25 V,Capacitor_SMD:C_0603_1608Metric,FIT,
+U2,TL431,TI TL431BIDBZR,Package_TO_SOT_SMD:SOT-23,FIT,"TL431 DBZ pinout 1 K, 2 REF, 3 A"
+R9,1.5k,1206 1% 0.25 W,Resistor_SMD:R_1206_3216Metric,FIT,
+R10,2.0k,0603 0.1%,Resistor_SMD:R_0603_1608Metric,FIT,
+R11,499,0603 0.1%,Resistor_SMD:R_0603_1608Metric,FIT,
+C9,10u,0805 X7R 16 V,Capacitor_SMD:C_0805_2012Metric,FIT,
+R12,1.0k,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+R13,1.5k,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+C10,10u,0805 X7R 16 V,Capacitor_SMD:C_0805_2012Metric,FIT,
+R14,10k,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+R15,8.2k,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+C11,10u,0805 X7R 16 V,Capacitor_SMD:C_0805_2012Metric,FIT,
+Q9,LSBF862,"Linear Systems LSBF862 (SOT-23), same selection as Q1-Q8 or higher Idss",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+R16,10,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+Q10,LSBF862,"Linear Systems LSBF862 (SOT-23), same selection as Q1-Q8 or higher Idss",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+R17,10,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+Q11,LSBF862,"Linear Systems LSBF862 (SOT-23), same selection as Q1-Q8 or higher Idss",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+R18,10,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+Q12,LSBF862,"Linear Systems LSBF862 (SOT-23), same selection as Q1-Q8 or higher Idss",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+R19,10,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+C12,10n,0402 X7R 16 V,Capacitor_SMD:C_0402_1005Metric,FIT,
+R24,100,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+Q13,LSBF862,"Linear Systems LSBF862 (SOT-23), same selection as Q1-Q8 or higher Idss",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+R20,10,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+Q14,LSBF862,"Linear Systems LSBF862 (SOT-23), same selection as Q1-Q8 or higher Idss",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+R21,10,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+Q15,LSBF862,"Linear Systems LSBF862 (SOT-23), same selection as Q1-Q8 or higher Idss",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+R22,10,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+Q16,LSBF862,"Linear Systems LSBF862 (SOT-23), same selection as Q1-Q8 or higher Idss",wblna:SOT-23_WB,FIT,"1 S, 2 D, 3 G"
+R23,10,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+C13,10n,0402 X7R 16 V,Capacitor_SMD:C_0402_1005Metric,FIT,
+R25,100,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+L3,0R link,Vishay WFZ0805 low-resistance jumper (peaking position; no inductor),Resistor_SMD:R_0805_2012Metric,FIT,drain link
+L4,0R link,Vishay WFZ0805 low-resistance jumper (peaking position; no inductor),Resistor_SMD:R_0805_2012Metric,FIT,drain link
+T2,WB5-1T,Coilcraft WB5-1TSLD (SMD; TH equivalent WB5-1TL),wb2:Coilcraft_WB_SMD,FIT,pad 5 unused (no net)
+R26,1,0603,Resistor_SMD:R_0603_1608Metric,FIT,
+C14,1u,0603 X7R 25 V,Capacitor_SMD:C_0603_1608Metric,FIT,
+C15,10n,0402 X7R 25 V,Capacitor_SMD:C_0402_1005Metric,FIT,
+R29,2.2k,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+C16,1u,0805 X7R 50 V,Capacitor_SMD:C_0805_2012Metric,FIT,
+J4,F-female,"Amphenol RF 222114-10 rear-bulkhead F jack, 75 ohm, RG-179 crimp (use the prescribed assembly); <= 50 mm RG-179 pigtail to the board pads",wb2:F_Pigtail_2pad,FIT,"two pads (centre, shield) at the board edge for the J4 pigtail; draw: 1.0 mm drill centre, shield pad/slot"
+J5,12 V jack,"Switchcraft 721AU panel-mount 2.1 mm DC jack, IP68, solder terminals; short twisted pair to the board",Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm,FIT,"wire landing for the panel jack: 1 = +, 2 = sleeve (CBL_GND copper only)"
+L5,744222,Wurth 744222,Inductor_SMD:L_CommonMode_Wuerth_WE-SL2,FIT,K9 pin map; no pour under the cable-side pins
+D9,SS14,onsemi SS14,Diode_SMD:D_SMA,FIT,
+L6,100u,TDK B82442T1104K000,wblna:L_2220_SIMID,FIT,as K9
+R27,1k,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+L7,1m,TDK B82442T1105K000,wblna:L_2220_SIMID,FIT,as K9
+FB9,600R@100M,Murata BLM18KG601SN1D,Inductor_SMD:L_0603_1608Metric,FIT,
+C17,1u,0805 X7R 50 V,Capacitor_SMD:C_0805_2012Metric,FIT,
+D10,SS14,onsemi SS14,Diode_SMD:D_SMA,FIT,
+F1,PTC 200 mA hold 60 V,Bourns MF-MSMF020/60-2,Fuse:Fuse_1812_4532Metric,FIT,MF-MSMF020/60-2 is 1812
+D11,SMBJ26A,Littelfuse SMBJ26A,Diode_SMD:D_SMB,FIT,
+U3,TPS26621,TI TPS26621DRCR (VSON-10),Package_SON:Texas_DRC0010J_ThermalVias,FIT,pad 11 = RTN3 island; thermal vias stay on RTN3; never tie RTN3 to GND or CBL_GND
+R33,1.02M,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+R34,133k,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+R35,10k,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+R36,26.7k,0603 1%,Resistor_SMD:R_0603_1608Metric,FIT,
+C23,220n,0603 X7R 25 V,Capacitor_SMD:C_0603_1608Metric,FIT,
+C24,2.2u,1206 X7R 50 V,Capacitor_SMD:C_1206_3216Metric,FIT,
+C18,1u,0805 X7R 50 V,Capacitor_SMD:C_0805_2012Metric,FIT,
+D14,PMEG4020ER,"Nexperia PMEG4020ER (40 V 2 A Schottky, 50 A surge)",Diode_SMD:D_SOD-123F,FIT,SOD-123W land; at U3/C18 with a short GND return (not RTN3)
+L8,100u,TDK B82442T1104K000,wblna:L_2220_SIMID,FIT,as K9
+C25,1u,0603 X7R 25 V,Capacitor_SMD:C_0603_1608Metric,FIT,
+R28,4.7,0805 1%,Resistor_SMD:R_0805_2012Metric,FIT,
+C19,220u,"Panasonic EEU-FC1V221B, 220 uF 35 V 105 C, 10 x 12.5 mm, 5 mm pitch (review-06 freeze; confirm active at order)",Capacitor_THT:CP_Radial_D10.0mm_P5.00mm,FIT,"EEU-FC1V221B: 10 mm body, 5 mm pitch, 12.5 mm high"
+C20,1u,0603 X7R 25 V,Capacitor_SMD:C_0603_1608Metric,FIT,

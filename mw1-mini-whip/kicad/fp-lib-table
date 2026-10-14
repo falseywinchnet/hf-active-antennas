@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "mw1") (type "KiCad") (uri "${KIPRJMOD}/mw1.pretty") (options "") (descr "MW-1 custom lands"))
+)

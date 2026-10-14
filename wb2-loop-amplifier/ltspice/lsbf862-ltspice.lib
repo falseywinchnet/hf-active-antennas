@@ -1,0 +1,9 @@
+* LTspice adapter: removed unsupported ZXTI=1 only; retains supported XTI=3.
+* Linear Systems LSBF862 model Rev 2, 02/09/2026.
+* Transcribed from references/lsbf862-spice.pdf; source retained unchanged.
+* Audit simulator warnings before trusting results.
+.MODEL LSBF862_LTSPICE NJF(
++ VTO=-0.79 BETA=2.658E-2 VTOTC=-2.5m BETATCE=-0.5 LAMBDA=0.03
++ RD=7.5 RS=7.5 IS=1E-14 ISR=1E-13 N=1 NR=2 XTI=3
++ ALPHA=1E-4 VK=180 CGS=8P CGD=3.5P PB=0.5 M=0.33 MJ=0.33
++ FC=0.5 KF=8.75E-17 AF=1 GDSNOI=2 NLEV=3 MFG=Linear_Systems)
