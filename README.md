@@ -1,3 +1,5 @@
+For the glory and the service of our God.
+
 # HF active antennas
 
 These are three open-hardware HF receive-antenna amplifiers. Each one ships with:
